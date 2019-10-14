@@ -1,0 +1,112 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+}
+[class *= "col-"]{
+  float: left;
+  border-radius: 3px;
+}
+.container{
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.nav-brand{
+  font-family: segoe script, cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: white;
+}
+.sel1{
+  width: 100%;
+}
+.right{
+  width: 100%;
+}
+.cont{
+  border: 1px solid #ccc;
+  padding: 25px 9px;
+}
+
+/*..................................computer science.............................................*/
+
+.Csc_Course{
+  padding: 15px;
+  margin-left: 0%;
+}
+
+.csc1 a, .csc2 a, .csc3 a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 30px;
+
+  font-family: cursive;
+}
+
+.csc1, .csc2, .csc3{
+  margin-left: 5%;
+  background-color: cadetblue;
+  color: white;
+  transition: 0.4s;
+}
+.csc1:hover, .csc2:hover, .csc3:hover{
+  transform: scale(1.15);
+  background-color: rgb(43, 154, 158);
+}
+
+/*.............. course outline.........................................*/
+
+.course-outline li{
+  padding: 3.5px 0px;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: cursive;
+
+}
+.gif{
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px){
+  
+.course-outline li{
+  font-size: 13px;
+}
+.allbtn .btn{
+  font-size: 12px;
+}
+.moveback{
+  margin-left: -10%;
+}
+}
+.tab{
+  display: none;
+}
+.nextbtn.disabled{
+  cursor: disabled;
+}

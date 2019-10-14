@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+            <link rel="stylesheet" type="text/css" href="../Econnect/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="../Econnect/style.css">
+
+            <script>
+               /*  var timer = 6, min = 0, sec = 0;  */
+
+                function _(x){
+                    return document.getElementById(x);
+                }
+                function startTimer(){
+                    min = parseInt(timer/60);
+                    sec = parseInt(timer%60);
+
+                    if (timer < 0){
+
+                        window.location = "chmtest.html";
+                        
+                    }
+
+                    timer--;
+
+                    setTimeout(function(){
+                        startTimer();
+                    }, 1000);
+                }
+            </script>
+<style>
+    body{
+        background-image: url('../img/1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+    </head>
+   <body  onload="startTimer()">
+       
+        <div class="container-fluid">
+            <br />
+            <div class="nav-brand text-muted">Instructions</div>
+                <hr />
+            <div class="row text-center">
+                    <div class="col-12">
+                            <h6 class="text-primary">Total Questions<br /></h6>
+                            <small><b>50</b></small>
+                        </div>
+                        </div>
+                        <hr />
+                                    <div class="row text-center">
+                                            <div class="col-6">
+                                                    <h6 class="text-primary">Course Code<br /></h6>
+                                                    <small><b>CHM101</b></small>
+                                                </div>
+                                                <div class="col-6">
+                                                        <h6 class="text-danger">Time Taken<br /></h6>
+                                                        <small><b>25mins</b></small>
+                                                    </div>
+                                                    </div>
+                                                    <br />
+                                    <div class="row text-center">
+                                            <div class="col-6">
+                                                    <h6 class="text-warning">Instruction 1<br /></h6>
+                                                    <small><b>Read Questions Carefully Before Attempting.</b></small>
+                                                </div>
+                                                <div class="col-6">
+                                                        <h6 class="text-warning">Instruction 2<br /></h6>
+                                                        <small><b>Think Carefully Before Picking Your Answers.</b></small>
+                                                    </div>
+                                                    </div>
+                                                    <br />
+                                                    <div class="row text-center">
+                                                            <div class="col-6">
+                                                                    <h6 class="text-warning">Instruction 3<br /></h6>
+                                                                    <small><b>Attempted/Unattempted Questions Cannot be answered/unanswered later.</b></small>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                        <h6 class="text-warning">Instruction 4<br /></h6>
+                                                                        <small><b>You can end the "test" by clicking the "End Test button".</b></small>
+                                                                    </div>
+                                                                    </div>
+                                                                    
+                                                    <br />
+                                                    <div class="row text-center">
+                                                            <div class="col-6">
+                                                                    <h6 class="text-warning">Instruction 5<br /></h6>
+                                                                    <small><b>If time elapses, Questions automatically submits.</b></small>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                        <h6 class="text-warning">Instruction 6<br /></h6>
+                                                                        <small><b>After Test Submition, Go Through all the Questions with there Preciding answers.</b></small>
+                                                                    </div>
+                                                                    </div>
+                                                                    <br />
+                                                                    <a href="chmtest.html"><button class="btn btn-primary btn-center">Start Test</button></a>
+                                                                    
+   </body> 
+
+</html>
