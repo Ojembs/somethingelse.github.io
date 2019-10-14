@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+            <link rel="stylesheet" type="text/css" href="Econnect/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="Econnect/style.css">
+
+            <script>
+                var timer = 6, min = 0, sec = 0; 
+
+                function _(x){
+                    return document.getElementById(x);
+                }
+                function startTimer(){
+                    min = parseInt(timer/60);
+                    sec = parseInt(timer%60);
+
+                    if (timer < 0){
+
+                        window.location = "index.htm";
+                        
+                    }
+
+                    timer--;
+
+                    setTimeout(function(){
+                        startTimer();
+                    }, 1000);
+                }
+            </script>
+<style>
+    body{
+        background-image: url('img/1.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+    </head>
+   <body  onload="startTimer()">
+       
+        <div class="container-fluid">
+            <br />
+            <div class="nav-brand text-muted">In Appriciation to</div>
+                <hr />
+            <br />
+                <div class="row text-center">
+                    <div class="col-6">
+                        <h6>Dean Of Student Affairs Fuoye Chapter<br /></h6>
+                        <small>Dr. Dosunmu Malomo<br />a.k.a Mallo</small>
+                    </div>
+                    <div class="col-6">
+                            <h6>Chemistry Department<br /></h6>
+                            <small>C.O Akintayo</small><br />
+                            <small>H.O Adubiaro</small><br />
+                            <small>J.O Ogundele</small>
+                        </div>
+                </div>
+               
+                        <br />
+                <div class="row text-center">
+                        <div class="col-6">
+                                <h6>Sponsors<br /></h6>
+                                <small>Pass.ng</small><br />
+                                <small>MySchoolNews.ng</small><br />
+                                <small>Dezigner (graphics Designs)</small>
+                            </div>
+                            <div class="col-6">
+                                    <h6> Physics Department<br /></h6>
+                                    <small>C.O Akintayo</small><br />
+                                    <small>H.O Adubiaro</small><br />
+                                    <small>J.O Ogundele</small>
+                                </div>
+                    </div>
+                            <br />
+                            <div class="row text-center">
+                                    <div class="col-6">
+                                            <h6> Computer-Science Department<br /></h6>
+                                            <small>C.O Akintayo</small><br />
+                                            <small>H.O Adubiaro</small><br />
+                                            <small>J.O Ogundele</small>
+                                        </div>
+                                        <div class="col-6">
+                                                <h6>Biology Department<br /></h6>
+                                                <small>C.O Akintayo</small><br />
+                                                <small>H.O Adubiaro</small><br />
+                                                <small>J.O Ogundele</small>
+                                            </div>
+                                    </div>
+                                    <br />
+                                    <div class="row text-center">
+                                            <div class="col-6">
+                                                    <h6>G.S.T Department<br /></h6>
+                                                    <small>C.O Akintayo</small><br />
+                                                    <small>H.O Adubiaro</small><br />
+                                                    <small>J.O Ogundele</small>
+                                                </div>
+                                                <div class="col-6">
+                                                        <h6>Maths Department<br /></h6>
+                                                        <small>C.O Akintayo</small><br />
+                                                        <small>H.O Adubiaro</small><br />
+                                                        <small>J.O Ogundele</small>
+                                                    </div>
+                                                    </div>
+   </body> 
+
+</html>
